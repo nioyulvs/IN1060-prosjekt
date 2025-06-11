@@ -140,4 +140,4 @@ void loop() {
       }
     }
   client.stop();
-}
+}//ferdig
