@@ -1,11 +1,11 @@
-// ESP32 #3: TCP SERVER + LED + PIEZO (i esp32-1 koden = server2Adress og server2Port)
+// ESP32 #3: TCP SERVER + LED + PIEZO (i esp32-1 koden = server1Adress og server1Port)
 #include <WiFi.h>
 #define LED_PIN 19                // LED tilkoblet GPIO19
 #define BUZZ_PIN 12              // Buzzer tilkoblet GPIO12
-#define SERVER_PORT 4081         // Porten som TCP-serveren lytter på
+#define SERVER_PORT 4080         // Porten som TCP-serveren lytter på (forskjellig fra esp32-3 koden)
 
-const char* ssid = "Norinn";             // Ditt WiFi SSID
-const char* password = "Kakesjokolade";  // Ditt WiFi-passord
+const char* ssid = "Norinn";             // WiFi SSID
+const char* password = "Kakesjokolade";  // WiFi-passord
 bool buzzerOn = false;                   // Variabel for å holde styr på om buzzer skal være aktiv
 long starttid = 0;                       // Starttid for buzzer-aktivitet
 long target_tid = 0;                     // Tidspunkt for neste tilstandsendring
