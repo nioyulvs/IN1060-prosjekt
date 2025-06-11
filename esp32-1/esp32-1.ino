@@ -24,12 +24,12 @@ int prevbutton1 = 0;
 int prevbutton2 = 0;
 
 // TCP-innstillinger for server 1 (tilhørende knapp 1)
-const char* server1Address = "192.168.57.216"; // IP-adresse til ESP32 #2
+const char* server1Address = " "; // IP-adresse til ESP32 #2 (de er tomme fordi de endres kontinuerlig og skal være forskjellige)
 //IP-adressen må oppdateres for hver gang
 const int server1Port = 4080;  // Portnummer som ESP32 #2 lytter på
 
 // TCP-innstillinger for server 2 (tilhørende knapp 2)
-const char* server2Address = "192.168.57.216"; // IP-adresse til ESP32 #3
+const char* server2Address = " "; // IP-adresse til ESP32 #3(de er tomme fordi de endres kontinuerlig og skal være forskjellige)
 //IP-adressen må oppdateres for hver gang
 const int server2Port = 4081;   // Portnummer som ESP32 #3 lytter på
 
